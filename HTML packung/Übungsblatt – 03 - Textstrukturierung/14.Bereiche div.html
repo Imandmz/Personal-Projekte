@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bereiche mit div</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .content {
+            overflow: hidden;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        li strong {
+            color: #000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><strong>HOME</strong></li>
+                <li>Blog</li>
+                <li>Referenzen</li>
+                <li>Impressum</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1><strong>HOME</strong></h1>
+        <p>Viel Inhalt</p>
+    </div>
+
+</body>
+
+</html>

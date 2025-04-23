@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eigenes Formular</title>
+</head>
+
+<body>
+    <form action="submit.php" method="post">
+        <p><label>Name: <input type="text" name="name" required></label></p>
+        <p><label>Alter: <input type="number" name="age" min="0" max="120"></label></p>
+        <p><label>Geschlecht:
+            <select name="gender">
+                <option value="male">Männlich</option>
+                <option value="female">Weiblich</option>
+                <option value="other">Andere</option>
+            </select>
+        </label></p>
+        <p><label>Nachricht: <textarea name="message" rows="4" cols="50"></textarea></label></p>
+        <p><label>Passwort: <input type="password" name="password"></label></p>
+        <p><input type="submit" value="Absenden"></p>
+    </form>
+</body>
+
+</html>

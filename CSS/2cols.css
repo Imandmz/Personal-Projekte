@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+}
+
+#main_wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 1260px;
+    min-width: 800px;
+    
+    /* Ändert Layout zu Flexbox für bessere Handhabung */
+    display: flex; /* <--- Neue Zeile */
+    flex-direction: column; /* <--- Neue Zeile */
+}
+
+#header {
+    background: blue;
+    color: white;
+    padding: 1em 2em;
+}
+
+#threecolwrap {
+    /* Ändert Layout zu Flexbox, um die Spalten nebeneinander zu platzieren */
+    display: flex; /* <--- Neue Zeile */
+    flex-wrap: wrap; /* <--- Neue Zeile */
+    justify-content: space-between; /* <--- Neue Zeile */
+    width: 100%;
+}
+
+#twocolwrap {
+    /* Entfernt float und verwendet Flexbox für die Spaltenanordnung */
+    display: flex; /* <--- Neue Zeile */
+    width: 100%;
+    justify-content: space-between; /* <--- Neue Zeile */
+}
+
+#nav {
+    width: 150px;
+    background: yellow;
+    padding: 1em .8em;
+}
+
+#content {
+    /* Flexbox verwendet, um sicherzustellen, dass der Inhalt flexibel ist */
+    flex-grow: 1; /* <--- Neue Zeile */
+    margin-left: 150px;
+    margin-right: 150px;
+    background: orange;
+    padding: 0 1em 1.5em;
+}
+
+#promo {
+    width: 170px;
+    background: lightgrey; /* <--- Neue Hintergrundfarbe */
+    padding: 1em;
+}
+
+#footer {
+    background: green;
+    color: white;
+    padding: .5em 1em;
+    text-align: center;
+    
+    /* Stellt sicher, dass der Footer unter allen anderen Elementen angezeigt wird */
+    clear: both;
+}
+
+#footer_inner {
+    background: green;
+    color: white;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+#header_inner, #nav_inner, #content_inner, #promo_inner {
+    overflow: hidden;
+}

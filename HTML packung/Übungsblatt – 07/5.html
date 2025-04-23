@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unterkunftsformular</title>
+</head>
+
+<body>
+    <form action="unterkunft.php" method="post">
+        <fieldset>
+            <legend>Unterkunft:</legend>
+            <label><input type="radio" name="unterkunft" value="EZ Frühstück"> EZ Frühstück</label><br>
+            <label><input type="radio" name="unterkunft" value="DZ Frühstück"> DZ Frühstück</label><br>
+            <label><input type="radio" name="unterkunft" value="DZ Halbpension"> DZ Halbpension</label><br>
+            <label><input type="radio" name="unterkunft" value="DZ Vollpension"> DZ Vollpension</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Optionen:</legend>
+            <label><input type="checkbox" name="optionen[]" value="Parkplatz"> Parkplatz</label><br>
+            <label><input type="checkbox" name="optionen[]" value="Internet"> Internet</label><br>
+            <label><input type="checkbox" name="optionen[]" value="Sauna"> Sauna</label><br>
+            <label><input type="checkbox" name="optionen[]" value="Vegetarisch"> Vegetarisch</label><br>
+            <label><input type="checkbox" name="optionen[]" value="Raucher"> Raucher</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interner Vermerk:</legend>
+            <label><input type="checkbox" name="vermerk" value="Tourist"> Tourist</label>
+        </fieldset>
+
+        <input type="submit" value="senden">
+    </form>
+</body>
+
+</html>

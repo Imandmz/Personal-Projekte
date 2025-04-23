@@ -1,0 +1,110 @@
+<!--
+5. Was ist der Unterschied zwischen den einzelnen Strukturen?
+
+Absolute Links: Verweisen auf eine vollständige 
+URL (https://example.com).
+
+Relative Links: Verweisen auf eine Datei im selben Projekt 
+(seite1.html).
+
+
+index.html (Startseite)
+├── wohnzimmer.html
+│   ├── sofa.html
+│   └── fernseher.html
+├── küche.html
+│   ├── kühlschrank.html
+│   └── herd.html
+└── schlafzimmer.html
+    ├── bett.html
+    └── schrank.html
+-->
+
+<!-- Haustüre -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haustüre</title>
+</head>
+<body>
+    <h1>Haustüre</h1>
+    <a href="flur.html">Zum Flur</a>
+</body>
+</html>
+
+<!-- Flur -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flur</title>
+</head>
+<body>
+    <h1>Flur</h1>
+    <a href="haustuere.html">Zurück zur Haustüre</a><br>
+    <a href="wohnzimmer.html">Zum Wohnzimmer</a><br>
+    <a href="kueche.html">Zur Küche</a><br>
+    <a href="stock1.html">Zum 1. Stock</a>
+</body>
+</html>
+
+<!-- Wohnzimmer -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wohnzimmer</title>
+</head>
+<body>
+    <h1>Wohnzimmer</h1>
+    <a href="flur.html">Zurück zum Flur</a>
+</body>
+</html>
+
+<!-- Küche -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Küche</title>
+</head>
+<body>
+    <h1>Küche</h1>
+    <a href="flur.html">Zurück zum Flur</a><br>
+    <a href="balkon.html">Zum Balkon</a>
+</body>
+</html>
+
+<!-- Balkon -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balkon</title>
+</head>
+<body>
+    <h1>Balkon</h1>
+    <a href="kueche.html">Zurück zur Küche</a>
+</body>
+</html>
+
+<!-- 1. Stock -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1. Stock</title>
+</head>
+<body>
+    <h1>1. Stock</h1>
+    <a href="flur.html">Zurück zum Flur</a><br>
+    <a href="schlafzimmer.html">Zum Schlafzimmer</a>
+</body>
+</html>
+
+<!-- Schlafzimmer -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schlafzimmer</title>
+</head>
+<body>
+    <h1>Schlafzimmer</h1>
+    <a href="stock1.html">Zurück zum 1. Stock</a>
+</body>
+</html>

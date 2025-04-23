@@ -1,0 +1,36 @@
+<!--
+Aufgabe 1. Wozu werden Formulare in einer Webseite verwendet?
+Formulare werden in Webseiten verwendet, um Benutzereingaben zu erfassen und an den Server zu senden. 
+Sie ermöglichen Interaktionen wie das Anmelden, Registrieren, Suchen oder Bestellen von Produkten.
+
+Aufgabe 6.
+     Client-seitige Validierung:
+         Wird mit HTML5-Attributen (z. B. required, pattern) oder JavaScript durchgeführt.
+         Reduziert die Serverlast, da Fehler früh erkannt werden.
+         Kann durch Deaktivierung von JavaScript umgangen werden.
+     Server-seitige Validierung:
+         Erfolgt nach dem Absenden der Formulardaten.
+         Stellt sicher, dass keine manipulierten oder ungültigen Daten gespeichert werden.
+         Ist zwingend notwendig für Sicherheit und Datenintegrität.
+-->
+
+<!--Aufgabe 2-->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular 1</title>
+</head>
+
+<body>
+    <form action="http://www.example.org/login.php" method="post" name="login">
+        <label>Username:<br>
+            <input type="text" size="40" name="Username" id="UserId">
+        </label>
+    </form>
+</body>
+
+</html>

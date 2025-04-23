@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formular Interaktion</title>
+</head>
+
+<body>
+    <form method="post" action="/cgi-bin/kunde.pl">
+        <p><kbd>Straße Hausnr.:</kbd><br>
+            <input type="text" name="street" style="width:300px" tabindex="2" accesskey="S"></p>
+        <p><kbd>Land / PLZ / Ort:</kbd><br>
+            <input type="text" name="country" style="width:20px"> 
+            <input type="text" name="plz" style="width:40px" tabindex="3" accesskey="L" placeholder="12345"> 
+            <input type="text" name="city" style="width:224px"></p>
+        <p><kbd>E-Mail:</kbd><br>
+            <input type="text" name="mail" style="width:300px" tabindex="4" accesskey="M" autofocus></p>
+        <p><kbd>Telefon:</kbd><br>
+            <input type="text" name="phone" style="width:300px"></p>
+        <p><kbd>Mobiltelefon:</kbd><br>
+            <input type="text" name="mobile" style="width:300px"></p>
+        <p><kbd>BLZ / Kontonummer:</kbd><br>
+            <input type="text" name="blz" style="width:80px" tabindex="7" accesskey="B">
+            <input type="text" name="konto" style="width:223px" tabindex="8" placeholder="100101010" autocomplete="off"></p>
+    </form>
+</body>
+
+</html>

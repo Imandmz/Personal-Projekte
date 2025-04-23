@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formular mit verschiedenen Feldtypen</title>
+</head>
+
+<body>
+    <form action="registrierung.exe" method="post">
+        <p><label>Name:<br> <input type="text" name="name"></label></p>
+        <p><label>Website:<br> <input type="url" name="website"></label></p>
+        <p><label>E-Mail:<br> <input type="email" name="mail"></label></p>
+        <p><label>Telefon:<br> <input type="tel" name="telefon"></label></p>
+        <p><label>Geburtsdatum:<br> <input type="date" name="geburtstag"></label></p>
+        <p><label>Selbsteinschätzung (1 = Versager, 10 = Genie):<br>
+            <input type="range" min="1" max="10" name="bewertung"></label></p>
+        <p><label>Lieblingsfarbe:<br> <input type="color" name="farbe"></label></p>
+        <p><label>Postleitzahl:<br> <input type="text" name="plz" pattern="[0-9]{5}" title="5-stellige Zahl!"></label></p>
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+
+</html>

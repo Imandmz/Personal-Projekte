@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Wunsch-Formular</title>
+</head>
+
+<body>
+    <h2><b>Drei Wünsche frei!</b></h2>
+    <form action="wunsch.php" method="post">
+        <fieldset>
+            <legend>Absender</legend>
+            <label>Vorname: <input type="text" name="vorname"></label><br>
+            <label>Zuname: <input type="text" name="zuname"></label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Wünsche</legend>
+            <label>Wunsch 1: <input type="text" name="wunsch1"></label><br>
+            <label>Wunsch 2: <input type="text" name="wunsch2"></label><br>
+            <label>Wunsch 3: <input type="text" name="wunsch3"></label>
+        </fieldset>
+        
+        <input type="submit" value="absenden">
+    </form>
+</body>
+
+</html>

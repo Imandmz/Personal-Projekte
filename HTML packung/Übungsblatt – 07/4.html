@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza-Bestellung</title>
+</head>
+
+<body>
+    <form action="bestellung.php" method="post">
+        <p><label><b>Pizzas:</b></label><br>
+            <select name="pizza" size="1" style="width: 200px;">
+                <option value="salami">Pizza mit Tomaten</option>
+            </select>
+        </p>
+
+        <p><label><b>Weitere Zutaten:</b> (Mehrfachauswahl möglich)<br>
+            <select multiple name="options[]" size="6" style="width: 200px;">
+                <option value="z1">Schinken</option>
+                <option value="z2">Peperoni</option>
+                <option value="z4">Artischocken</option>
+            </select>
+        </label></p>
+
+        <p><label><b>Wein:</b></label><br>
+            <select name="wein" size="8" style="width: 200px;">
+                <optgroup label="Rotweine">
+                    <option value="valpolicella">Valpolicella</option>
+                </optgroup>
+                <optgroup label="Weißweine">
+                    <option value="soave">Soave</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+</body>
+
+</html>

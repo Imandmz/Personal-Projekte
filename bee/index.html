@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--HTML-->
+    <script>
+        function changePlayground(){
+            let bee = document.createElement('img');
+            bee.style.width='50px';
+
+            let zufall=Math.floor(Math.random()*(2-1+1))+1;
+            if(zufall===1)
+            {
+                bee.src='images/beeleft.png';
+            }
+            else
+            {
+                bee.src='images/beeright.png';
+            }
+
+            bee.addEventListener('click', () => {
+               beeBrr();
+            });
+
+            let playGround=document.getElementById('myPlayground');
+            playGround.appendChild(bee);
+        }
+        function beeBrr(){
+            //console.log("play sound");
+            document.getElementById('audiofile').play();
+        }
+
+    </script>
+</head>
+<body>
+    <div id="myPlayground"></div>
+    <br>
+    <button onclick="changePlayground()">Neues Bild</button>
+
+    <audio id="audiofile" preload="auto">
+        <source src="./sounds/399303__explosion012.mp3"/>
+    </audio>
+
+    <script>
+        //JavaScript
+    </script>
+</body>
+</html>

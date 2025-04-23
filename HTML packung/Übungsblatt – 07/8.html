@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fragen-Formular</title>
+</head>
+
+<body>
+    <form method="post" action="fragen-auswertung.php">
+        <fieldset id="fset1" style="display: block;">
+            <p>Dein Name:</p>
+            <input type="text" name="name" size="40">
+            <p><progress max="4" value="1"></progress> Schritt 1 / 4</p>
+            <input type="button" value="Weiter" onclick="show_fset(2)">
+        </fieldset>
+
+        <fieldset id="fset2" style="display: none;">
+            <p>Deine Hobbys:</p>
+            <input type="text" name="hobbies" size="40">
+            <p><progress max="4" value="2"></progress> Schritt 2 / 4</p>
+            <input type="button" value="Weiter" onclick="show_fset(3)">
+        </fieldset>
+
+        <fieldset id="fset3" style="display: none;">
+            <p>Dein größter Wunsch:</p>
+            <input type="text" name="wunsch" size="40">
+            <p><progress max="4" value="3"></progress> Schritt 3 / 4</p>
+            <input type="button" value="Weiter" onclick="show_fset(4)">
+        </fieldset>
+
+        <fieldset id="fset4" style="display: none;">
+            <p>Dein größter Erfolg:</p>
+            <input type="text" name="erfolg" size="40">
+            <p><progress max="4" value="4"></progress> Schritt 4 / 4</p>
+            <input type="submit" value="Absenden">
+        </fieldset>
+    </form>
+
+    <script>
+        function show_fset(n) {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById('fset' + i).style.display = (i === n) ? "block" : "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

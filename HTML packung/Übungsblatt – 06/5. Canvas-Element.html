@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Beispiel</title>
+</head>
+
+<body>
+    <h2>Canvas-Grafik</h2>
+    <canvas id="info" width="400" height="600"></canvas>
+
+    <script>
+        var infoPic = document.getElementById('info');
+        if (infoPic.getContext) {
+            var ctx = infoPic.getContext('2d');
+
+            ctx.fillStyle = "#AAAAAA";
+            ctx.fillRect(0, 0, 140, 360);
+
+            ctx.fillStyle = "#FF8800";
+            ctx.fillRect(20, 130, 100, 200);
+
+            ctx.fillStyle = "#880088";
+            ctx.beginPath();
+            ctx.arc(70, 70, 50, 0, 2 * Math.PI, true);
+            ctx.fill();
+
+            ctx.fillStyle = "#880088";
+            ctx.font = "bold 14px Arial, sans-serif";
+            ctx.fillText("INFORMATION", 22, 325);
+        }
+    </script>
+
+</body>
+
+</html>
