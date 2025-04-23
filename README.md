@@ -1,4 +1,3 @@
-HEAD
 # Mein Projekt
 
 # github-import
