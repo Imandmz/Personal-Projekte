@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.menschaergerdichnicht.GameController">
+    <children>
+        <AnchorPane fx:id="SpielAPane" maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0"
+                    prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" visible="false">
+            <children>
+                <Polygon fx:id="Spieler1_Tri" fill="WHITE" layoutX="277.0" layoutY="373.0" rotate="90.0" scaleX="0.92" scaleY="0.45"
+                         stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Rectangle fx:id="Spieler3_Rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="157.0"
+                           layoutX="254.0" layoutY="410.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+
+                <Polygon fx:id="Spieler4_Tri" fill="WHITE" layoutX="323.0" layoutY="373.0" rotate="-90.0" scaleX="0.92" scaleY="0.45"
+                         stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Rectangle fx:id="FigurVRec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="157.0" layoutX="393.0" layoutY="299.0"
+                           rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+
+                <Polygon fx:id="Spieler3_Tri" fill="WHITE" layoutX="300.0" layoutY="397.0" scaleX="0.92" scaleY="0.45"
+                         stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <Rectangle fx:id="Spieler1_Rec" arcHeight="5.0" arcWidth="5.0" fill="#dcdcdc" height="150.0" layoutX="148.0" layoutY="271.0"
+                           rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+                <Rectangle fx:id="Spieler2_Rec" arcHeight="5.0" arcWidth="5.0" fill="#dcdcdc" height="149.0" layoutX="285.0" layoutY="167.0"
+                           stroke="BLACK" strokeType="INSIDE" width="62.0" />
+
+                <Polygon fx:id="Spieler2_Tri" fill="#dcdcdc" layoutX="300.0" layoutY="350.0" rotate="180.0" scaleX="0.92" scaleY="0.45"
+                         stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                    </points>
+                </Polygon>
+                <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" y="50.0">
+                    <image>
+                        <Image url="@imgs/Main_img.png" />
+                    </image>
+                </ImageView>
+
+                <Line endX="700.0" endY="42.0" startY="42.0" />
+                <Line endX="600.0" endY="650.0" layoutY="26.0" startY="650.0" />
+
+
+                <Button fx:id="Dice_Button" layoutX="246.0" layoutY="685.0" mnemonicParsing="false" onAction="#rollDice"
+                        onKeyPressed="#rollDice" prefHeight="110.0" prefWidth="112.0" style="-fx-font-size: 50px; -fx-background-color: #ea0808;" />
+
+                <Rectangle fx:id="diceButtonRec" arcHeight="0.0" arcWidth="0.0" blendMode="ADD" disable="true" height="105.0"
+                           layoutX="246.0" layoutY="685.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+
+                <Circle fx:id="FigurS1" fill="WHITE" layoutX="90.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurS2" fill="WHITE" layoutX="170.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurS4" fill="WHITE" layoutX="170.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurS3" fill="WHITE" layoutX="90.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+
+                <Circle fx:id="FigurT3" fill="WHITE" layoutX="430.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurT4" fill="WHITE" layoutX="510.0" layoutY="242.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurT2" fill="WHITE" layoutX="510.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurT1" fill="WHITE" layoutX="430.0" layoutY="150.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+
+                <Circle fx:id="FigurU1" fill="WHITE" layoutX="90.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurU2" fill="WHITE" layoutX="170.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurU4" fill="WHITE" layoutX="170.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurU3" fill="WHITE" layoutX="90.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+
+                <Circle fx:id="FigurV3" fill="WHITE" layoutX="430.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurV4" fill="WHITE" layoutX="510.0" layoutY="574.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurV2" fill="WHITE" layoutX="510.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+                <Circle fx:id="FigurV1" fill="WHITE" layoutX="430.0" layoutY="482.0" radius="13.0" strokeType="INSIDE" styleClass="Figure" />
+
+                <Label fx:id="Spieler1_Lb" layoutX="1.0" layoutY="42.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0"
+                       prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+                <Label fx:id="Spieler3_Lb" layoutY="625.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0" prefHeight="50.0"
+                       prefWidth="249.0" styleClass="Name_Labels" />
+                <Label fx:id="Spieler2_Lb" layoutX="353.0" layoutY="42.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0"
+                       prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+                <Label fx:id="Spieler4_Lb" layoutX="351.0" layoutY="625.0" maxHeight="50.0" maxWidth="249.0" minWidth="130.0"
+                       prefHeight="50.0" prefWidth="249.0" styleClass="Name_Labels" />
+
+                <Button id="Return_Button" cancelButton="true" focusTraversable="false" layoutX="18.0" maxHeight="41.0" maxWidth="160.0" minHeight="41.0" minWidth="41.0"
+                        mnemonicParsing="false" onAction="#ZuruckzuMenu" prefHeight="41.0" prefWidth="160.0" />
+
+
+                <Button fx:id="FigButton1" layoutX="77.0" layoutY="137.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0"
+                        mnemonicParsing="false" onAction="#FigurButtonKlicker" prefHeight="26.0" prefWidth="26.0" styleClass="FigurButton" text="0"
+                        textAlignment="CENTER" visible="false" />
+
+                <Button fx:id="FigButton2" layoutX="157.0" layoutY="137.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0"
+                        mnemonicParsing="false" onAction="#FigurButtonKlicker" prefHeight="26.0" prefWidth="26.0" styleClass="FigurButton" text="1"
+                        textAlignment="CENTER" visible="false" />
+
+                <Button fx:id="FigButton3" layoutX="77.0" layoutY="229.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0"
+                        mnemonicParsing="false" onAction="#FigurButtonKlicker" prefHeight="26.0" prefWidth="26.0" styleClass="FigurButton" text="2"
+                        textAlignment="CENTER" visible="false" />
+
+                <Button fx:id="FigButton4" layoutX="157.0" layoutY="230.0" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0"
+                        mnemonicParsing="false" onAction="#FigurButtonKlicker" prefHeight="26.0" prefWidth="26.0" styleClass="FigurButton" text="3"
+                        textAlignment="CENTER" visible="false" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="SpielStartMenu" maxHeight="800.0" maxWidth="600.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0">
+            <children>
+                <Label id="SpielStarter" fx:id="SpielStarter" layoutX="50.0" layoutY="50.0" prefHeight="30.0" prefWidth="500.0" text="Du brauchst mindestens 2 Spieler, um zu beginnen!" />
+
+
+
+                <CheckBox fx:id="Spieler1_C" layoutX="100.0" layoutY="120.0" mnemonicParsing="false" onAction="#checkboxChanged" selected="true" styleClass="Checkboxen" text="Spieler 1" />
+                <TextField fx:id="Spieler1_N" layoutX="250.0" layoutY="120.0" prefHeight="40.0" prefWidth="200.0" />
+
+                <CheckBox fx:id="Spieler2_C" layoutX="100.0" layoutY="170.0" mnemonicParsing="false" onAction="#checkboxChanged" styleClass="Checkboxen" text="Spieler 2" />
+                <TextField fx:id="Spieler2_N" layoutX="250.0" layoutY="170.0" prefHeight="40.0" prefWidth="200.0" />
+
+                <CheckBox fx:id="Spieler3_C" layoutX="100.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkboxChanged" styleClass="Checkboxen" text="Spieler 4" />
+                <TextField fx:id="Spieler3_N" layoutX="250.0" layoutY="270.0" prefHeight="40.0" prefWidth="200.0" />
+
+                <CheckBox fx:id="Spieler4_C" layoutX="100.0" layoutY="220.0" mnemonicParsing="false" onAction="#checkboxChanged" selected="true" styleClass="Checkboxen" text="Spieler 3" />
+                <TextField fx:id="Spieler4_N" layoutX="250.0" layoutY="220.0" prefHeight="40.0" prefWidth="200.0" />
+
+                <Label id="SpielStarter" fx:id="SpielStarter" layoutX="50.0" layoutY="450.0" prefHeight="30.0" prefWidth="500.0" text="Programmierer :" />
+                <Label id="SpielStarter" fx:id="SpielStarter" layoutX="50.0" layoutY="480.0" prefHeight="30.0" prefWidth="500.0" text="Tetiana Dembitska, Iman Daemalzekr" />
+
+                <Button fx:id="Start_Button" defaultButton="true" layoutX="200.0" layoutY="550.0" mnemonicParsing="false" onAction="#Start_Game"
+                        prefHeight="150.0" prefWidth="150.0" text="Start" textFill="#656565">
+                    <effect>
+                        <DropShadow color="#67837c" height="43" offsetX="5.0" offsetY="5.0" radius="20" spread="0.1" width="40" />
+                    </effect>
+                    <shape>
+                        <Circle radius="75.0" />
+                    </shape>
+                </Button>
+            </children>
+        </AnchorPane>
+
+
+    </children>
+</AnchorPane>
