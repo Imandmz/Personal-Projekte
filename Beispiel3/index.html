@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Beispiel 3 (Automatische Aktualisierung)</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function ladeDaten() {
+                $.get("daten.php", function(data) {
+                    $("#inhalt").html(data);
+                });
+            }
+            ladeDaten();
+            setInterval(ladeDaten, 2000);
+        });
+    </script>
+    <style>
+        #roboter {
+            width: 225px; /* 150% von 150px */
+        }
+    </style>
+</head>
+<body>
+    <h1>Herzlich willkommen!</h1>
+    <div id="inhalt"></div>
+    <img id="roboter" src="roboter.jpg" alt="Roboter">
+</body>
+</html>
